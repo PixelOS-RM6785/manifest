@@ -86,4 +86,9 @@
   <project path="external/libxml2" name="external_libxml2" remote="PixelOS-RM6785" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="PixelOS-RM6785" />
   <project path="tools/apksig" name="tools_apksig" remote="PixelOS-RM6785" />
+  <project path="external/webp" name="external_webp" remote="PixelOS-RM6785" />
+  <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="PixelOS-RM6785" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="PixelOS-RM6785" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="PixelOS-RM6785" />
+  <project path="system/ca-certificates" name="system_ca-certificates" remote="PixelOS-RM6785" />
 </manifest>
