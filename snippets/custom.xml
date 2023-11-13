@@ -9,6 +9,10 @@
            fetch="https://gitlab.com/PixelOS-AOSP"
            revision="refs/heads/thirteen" />
 
+  <remote  name="PixelOS-RM6785"
+           fetch="https://github.com/PixelOS-RM6785"
+           revision="refs/heads/thirteen" />
+
   <!-- Rootdir -->
   <project path="art" name="art" groups="pdk" remote="PixelOS" />
   <project path="bionic" name="bionic" groups="pdk" remote="PixelOS" />
@@ -17,7 +21,7 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="PixelOS" />
 
   <!-- Build -->
-  <project path="build/make" name="build" groups="pdk" remote="PixelOS">
+  <project path="build/make" name="build" groups="pdk" remote="PixelOS-RM6785">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -35,9 +39,9 @@
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="PixelOS" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="PixelOS" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="PixelOS" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="PixelOS" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="PixelOS-RM6785" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="PixelOS-RM6785" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="PixelOS-RM6785" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="PixelOS" />
 
   <!-- Hardware -->
@@ -46,12 +50,12 @@
 
   <!-- Packages -->
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="PixelOS" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="PixelOS" />
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="PixelOS" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="PixelOS-RM6785" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="PixelOS-RM6785" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="PixelOS" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="PixelOS" />
-  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="PixelOS" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="PixelOS" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="PixelOS-RM6785" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="PixelOS-RM6785" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="PixelOS" />

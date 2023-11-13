@@ -1,40 +1,30 @@
-<img src="https://github.com/PixelOS-AOSP/official_devices/blob/thirteen/banners/latest.png?raw=true">
-
 # PixelOS
 
- Getting Started
----------------
-To get started with the PixelOS sources, you'll need to get
-familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
+Getting Started
+===============
 
- To initialize your local repository, use command:
+To get started with the building process, you'll need to get familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+
+To initialize your local repository, use a command like this:
 
 ```bash
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b thirteen
+repo init -u https://github.com/PixelOS-RM6785/manifest.git -b thirteen
 ```
 
-Then sync up:
+Then to sync up:
+================
 
 ```bash
-repo sync
+repo sync -j$(nproc --all)
 ```
 
-Building the System
--------------------
- Initialize the ROM environment with the envsetup.sh script.
+Compilation of PixelOS
+======================
+
+From root directory of Project, perform following commands in terminal to start Compilation.
 
 ```bash
-. build/envsetup.sh
-```
-
-Lunch your device after cloning all device sources if needed.
-
-```bash
-lunch aosp_devicecodename-buildtype
-```
-
-Start compilation
-
-```bash
-make bacon
+source build/envsetup.sh
+lunch aosp_<devicecodename>-userdebug
+make bacon -j$(nproc --all)
 ```
