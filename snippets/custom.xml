@@ -81,4 +81,9 @@
   <project path="vendor/google/gms" name="vendor_google_gms" clone-depth="1" remote="PixelOS-Gitlab" />
   <project path="vendor/google/pixel" name="vendor_google_pixel" remote="PixelOS"/>
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="PixelOS" />
+
+  <!-- Patch -->
+  <project path="external/libxml2" name="external_libxml2" remote="PixelOS-RM6785" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="PixelOS-RM6785" />
+  <project path="tools/apksig" name="tools_apksig" remote="PixelOS-RM6785" />
 </manifest>

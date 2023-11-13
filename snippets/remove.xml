@@ -141,4 +141,9 @@
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
+
+  <!-- Patch -->
+  <remove-project name="platform/external/libxml2" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <remove-project name="platform/tools/apksig" />
 </manifest>
