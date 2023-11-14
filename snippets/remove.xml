@@ -121,6 +121,7 @@
   <remove-project name="platform/packages/modules/adb" />
   <remove-project name="platform/packages/services/Telecomm"/>
   <remove-project name="platform/packages/services/Telephony"/>
+  <remove-project name="platform/packages/apps/KeyChain"/>
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/build-tools" />
