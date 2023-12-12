@@ -152,4 +152,7 @@
   <remove-project name="platform/packages/modules/StatsD" />
   <remove-project name="platform/packages/providers/TelephonyProvider" />
   <remove-project name="platform/system/ca-certificates" />
+  <remove-project name="platform/cts" />
+  <remove-project name="platform/external/pdfium" />
+
 </manifest>
